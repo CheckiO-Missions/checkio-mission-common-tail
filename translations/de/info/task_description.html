@@ -1,0 +1,28 @@
+<!-- Describe task in general -->
+
+<p>
+    Sie erhalten zwei {% if is_js %}Arrays mit Zahlen{% else %}Listen mit ganzen Zahlen{% endif %}.
+    Die Elemente sind in jedem {% if is_js %}Array{% else %}Liste{% endif %} eindeutig.
+    Diese {% if is_js %}Arrays{% else %}Listen{% endif %} können ein oder mehrere gemeinsame Elemente haben.
+    Wir interessieren uns jedoch für das/die gemeinsame(n) Element(e) am Ende der {% if is_js %}Arrays{% else %}Listen{% endif %}.
+    Ihre Funktion sollte ein Element zurückgeben, von dem ein gemeinsamer Teil ausgeht und es keine
+    andere(s) Element(e) nach diesem Teil gibt - das erste Element des letzten gemeinsamen Teils (gemeinsames Ende).
+    Wenn es kein solches Element gibt ({% if is_js %}Arrays{% else %}Listen{% endif %}
+    enden nicht mit einem gemeinsamen Element) sollte Ihre Funktion {% if is_js %}null{% else %}Keine{% endif %} zurückgeben. Viel Glück!
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei {% if is_js %}Arrays mit Zahlen{% else %}Listen mit ganzen Zahlen{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Zahl oder Null{% else %}Ganzzahl oder Keine{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
